@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+$(function(){
+	$("button").click(function(){log_in();});
+	$("#user, #pass").keyup(function(ev){
+		if (event.keyCode == 13) log_in();
+	});
+});
+
+function log_in()
+{
+	$.post("login",{user:$("#user").val(),pass:$("#pass").val()},function(data){
+		if (data == "success") window.location = "query";
+		else $("body").html("authentication failed");
+	});
+}
+</script>
+</head>
+<body>
+<input type=text id="user"/><br />
+<input type=password id="pass"/><br />
+<button>log in</button>
+</form>
+</body>
+</html>
