@@ -1,0 +1,487 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+@font-face {
+    font-family: 'cursive_standardregular';
+    src: url('../fonts/cursive_standard_bold-webfont.woff2') format('woff2'),
+         url('../fonts/cursive_standard_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cursive_standardregular';
+    src: url('../fonts/cursive_standard-webfont.woff2') format('woff2'),
+         url('../fonts/cursive_standard-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*  ==========================================================================
+    MISC
+    ========================================================================== */
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        img{
+            max-width: 100%;
+        }
+        p{
+            color: #888;
+        }
+        h1,h2,h3,h4,h5{
+            font-family: 'Oswald', sans-serif;
+        }
+        a{
+            -webkit-transition: all 0.35s ease 0s;
+               -moz-transition: all 0.35s ease 0s;
+                -ms-transition: all 0.35s ease 0s;
+                 -o-transition: all 0.35s ease 0s;
+                    transition: all 0.35s ease 0s;
+        }
+        a:hover,a:focus{
+            text-decoration: none;
+            outline: none;
+        }
+        .title{
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 0 50px;
+            font-size: 40px;
+            color: #013264;
+        }
+        .form-group{
+            width: 100%;
+            margin-bottom: 20px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .form-control{
+            border-radius: 0;
+            box-shadow: none;
+            height: auto;
+            padding: 15px;
+        }
+        .btn{
+            border-radius: 0;
+            padding: 15px;
+            text-align: center;
+            border: 0;
+            font-weight: 600;
+            text-transform: uppercase;
+            min-width: 150px;
+            -webkit-transition: all 0.35s ease 0s;
+               -moz-transition: all 0.35s ease 0s;
+                -ms-transition: all 0.35s ease 0s;
+                 -o-transition: all 0.35s ease 0s;
+                    transition: all 0.35s ease 0s;
+        }
+        .btn-primary{
+            background: #FFB401;
+        }
+        .btn-primary:hover{
+            background: #333;
+        }
+        .info-box{
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+/*  ==========================================================================
+    Header
+    ========================================================================== */
+        .header{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            background: rgba(0,0,0,0.7);            
+        }
+        .header:after{
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            background: url(../img/header-bg.png) no-repeat left top / cover;
+        }
+        .head{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            padding: 30px 0;
+        }
+        .logo{
+            background: #FFB401;
+            width: 100%;
+            padding: 20px 10px;
+            line-height: 1.4;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            text-align: center;
+            color: #fff;
+            margin: 0;
+        }
+        .logo a{
+            color: #fff;
+        }
+        .logo a span{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 18px;
+            font-weight: normal;
+        }
+        .header-sidebar{
+            list-style: none;
+            margin: 30px 0 0 0;
+            float: right;
+            padding: 0;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .header-sidebar li{
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+        }
+        .header-sidebar li i{
+            float: left;
+            width: 30px;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            /*margin-top: 5px;*/
+            display: inline-block;
+            vertical-align: top;
+        }
+        .header-sidebar li .info-side{
+            display: inline-block;
+            vertical-align: top;
+        }
+        .header-sidebar li .info-side span{
+            color: #fff;
+            float: left;
+            margin-right: 5px;
+            vertical-align: top;
+        }
+        .header-sidebar li .info-side p{
+            margin: 0;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            float: left;
+        }
+        .navigation{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            background: #FFB401;
+            background: rgba(255,180,1,0.9);
+        }
+        .navigation ul{
+            list-style: none;
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .navigation ul li{
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 5px;
+        }
+        .navigation ul li a{
+            color: #000;
+            padding: 15px 20px;
+            display: inline-block;
+            vertical-align: top;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .navigation ul li:hover a,.navigation ul li.active a{
+            background: #DF9D00;
+        }
+
+/*  ==========================================================================
+    Product Seciton            
+    ========================================================================== */
+        .product-section{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            padding: 60px 0;
+        }
+        .product-box{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 30px;
+            border: 1px solid rgba(0,0,0,0.07);
+        }
+        .product-img{
+            padding: 15px;
+            align-items: center;
+            background: #fafafa none repeat scroll 0 0;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            min-height: 280px;
+            text-align: center;
+            vertical-align: top;
+            width: 100%;
+        }
+        .product-img a{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            height: 100%;
+        }
+        .product-info{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            padding: 15px;
+        }
+        .product-info h2{
+            margin: 5px 0 15px;
+            font-size: 22px;
+            font-weight: 600;
+            font-family: 'Roboto', sans-serif;
+        }
+        .product-info h2 a{
+            color: #333;
+        }
+        .product-info h2 a:hover{
+            color: #013264;
+        }
+        .product-info p{
+            letter-spacing: 0.5px;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+/*  ==========================================================================
+    Parallax Section
+    ========================================================================== */
+        .parallax-section{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            background-color: rgba(0,0,0,0.7);
+        }
+        .parallax-section::after {
+            background: rgba(0, 0, 0, 0) url("../img/12-twelve-Diamondplate.jpeg") no-repeat left top / cover ;
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+        }
+        .parallax-section h2{
+            color: #fff;
+            font-size: 6em;
+            margin: 0;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+        .cursive-text{
+            font-family: 'cursive_standardregular';
+            text-transform: none;
+        }
+        .distributor-logo{
+            margin-bottom: 15px;
+        }
+
+/*  ==========================================================================
+    About Section
+    ========================================================================== */
+        .about-section{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            padding: 90px 0;
+            background: url(../img/parallax-2.png) no-repeat left bottom / cover;
+        }
+        .about-section iframe{
+            width: 100%;
+            height: 350px;
+        }
+        .feature-list{
+            list-style: none;
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+            padding: 0;
+        }
+        .feature-list li{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+        }
+        .feature-list li:first-child{
+            margin-top: 0;
+        }
+        .feature-list li .img-box{
+            float: left;
+            line-height: 80px;
+            text-align: center;
+            width: 80px;
+            background: #fff;
+            margin-right: 15px;
+            border: 1px solid rgba(0,0,0,0.3);
+        }
+        .feature-list li .feature-info{
+            display: block;
+            overflow: hidden;
+        }
+        .feature-list li .feature-info h4{
+            margin-top: 0;
+        }
+        .feature-list li .feature-info p{
+            letter-spacing: 0.5px;
+            line-height: 1.7;
+        }
+
+/*  ==========================================================================
+    Contact Section
+    ========================================================================== */
+        .contact-section{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            padding: 60px 0;
+        }
+
+/*  ==========================================================================
+    Footer
+    ========================================================================== */
+        .footer{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            background: #013264;
+            text-align: center;
+            padding: 15px 0;
+            color: #fff;
+        }
+        .footer p{
+            color: #fff;
+            margin: 0;
+        }
+
+/*  ==========================================================================
+    Responsive
+    ========================================================================== */
+        @media screen and (max-width: 992px){
+            .logo{
+                font-size: 22px;
+            }
+            .logo a span{
+                font-size: 12px;
+            }
+            .head{
+                padding: 20px 0;
+            }
+            .header-sidebar{
+                margin-top: 20px;
+            }
+            .product-img{
+                min-height: 170px;
+            }
+            .product-img img {
+                max-width: 150px;
+            }
+            .parallax-section h2{
+                font-size: 4em;
+            }
+            .feature-list{
+                margin-top: 30px;
+            }
+            .about-section{
+                padding: 60px 0;
+            }
+        }
+        @media screen and (min-width: 767px){
+            .nav-btn{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 767px){
+            .header-sidebar{
+                display: table;
+                float: none;
+                margin: 20px auto 0;
+            }
+            .about-section iframe{
+                height: 180px;
+            }
+            .header-sidebar li{
+                margin: 0 0 10px;
+            }
+            .navigation ul{
+                display: none;
+                margin-bottom: 15px;
+                margin-top: 60px;
+            }
+            .navigation ul li,.navigation ul li a{
+                width: 100%;
+                display: inline-block;
+                vertical-align: top;
+                margin: 0;
+            }
+            .nav-btn{
+                padding: 10px 0;
+                float: right;
+                width: 40px;
+                display: inline-block;
+                vertical-align: top;
+            }
+            .nav-btn span{
+                background: #fff;
+                height: 4px;
+                width: 100%;
+                display: inline-block;
+                vertical-align: top;
+                margin: 3px 0;
+                position: relative;
+                -webkit-transition: all 0.35s ease 0s;
+                   -moz-transition: all 0.35s ease 0s;
+                    -ms-transition: all 0.35s ease 0s;
+                     -o-transition: all 0.35s ease 0s;
+                        transition: all 0.35s ease 0s;
+            }
+            .nav-btn.active span:first-child{
+                top: 10px;
+                -webkit-transform: rotate(45deg);
+                   -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                     -o-transform: rotate(45deg);
+                        transform: rotate(45deg);
+            }
+            .nav-btn.active span:last-child{
+                top: 0;
+                -webkit-transform: rotate(-45deg);
+                   -moz-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                     -o-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+            }
+            .nav-btn.active span:nth-child(2){
+                display: none;
+            }
+        }

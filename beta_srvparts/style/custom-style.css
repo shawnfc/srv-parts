@@ -1,0 +1,206 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+
+/*  ==========================================================================
+    MISC
+    ========================================================================== */
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        h1,h2,h3,h4,h5{
+            font-family: 'Oswald', sans-serif;
+        }
+        a{
+            -webkit-transition: all 0.35s ease 0s;
+               -moz-transition: all 0.35s ease 0s;
+                -ms-transition: all 0.35s ease 0s;
+                 -o-transition: all 0.35s ease 0s;
+                    transition: all 0.35s ease 0s;
+        }
+        a:hover,a:focus{
+            text-decoration: none;
+            outline: none;
+        }
+        .title{
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 0 50px;
+            font-size: 40px;
+            color: #013264;
+        }
+
+/*  ==========================================================================
+    Header
+    ========================================================================== */
+        .header{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            background: rgba(1,50,100,0.7);            
+        }
+        .header:after{
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            background: url(../img/header-bg.png) no-repeat left top / cover;
+        }
+        .head{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            padding: 30px 0;
+        }
+        .logo{
+            background: #FFB401;
+            width: 100%;
+            padding: 20px 10px;
+            line-height: 1.4;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            text-align: center;
+            color: #fff;
+            margin: 0;
+        }
+        .logo a{
+            color: #fff;
+        }
+        .logo a span{
+            font-size: 18px;
+            font-weight: normal;
+        }
+        .header-sidebar{
+            list-style: none;
+            margin: 30px 0 0 0;
+            float: right;
+            padding: 0;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .header-sidebar li{
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+        }
+        .header-sidebar li i{
+            float: left;
+            width: 50px;
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+            margin-top: 5px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .header-sidebar li .info-side{
+            display: inline-block;
+            vertical-align: top;
+        }
+        .header-sidebar li .info-side span{
+            color: #fff;
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .header-sidebar li .info-side p{
+            margin: 0;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .navigation{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            background: #FFB401;
+            background: rgba(255,180,1,0.9);
+        }
+        .navigation ul{
+            list-style: none;
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .navigation ul li{
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 5px;
+        }
+        .navigation ul li a{
+            color: #000;
+            padding: 15px 20px;
+            display: inline-block;
+            vertical-align: top;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .navigation ul li:hover a,.navigation ul li.active a{
+            background: #DF9D00;
+        }
+
+/*  ==========================================================================
+    Product Seciton            
+    ========================================================================== */
+        .product-section{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            padding: 60px 0;
+        }
+        .product-box{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 30px;
+            border: 1px solid rgba(0,0,0,0.07);
+        }
+        .product-img{
+            align-items: center;
+            background: #fafafa none repeat scroll 0 0;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            min-height: 260px;
+            text-align: center;
+            vertical-align: top;
+            width: 100%;
+        }
+        .product-img a{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            height: 100%;
+        }
+        .product-info{
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            padding: 15px;
+        }
+        .product-info h2{
+            margin: 5px 0 15px;
+            font-size: 22px;
+            font-weight: 600;
+            font-family: 'Roboto', sans-serif;
+        }
+        .product-info h2 a{
+            color: #333;
+        }
+        .product-info h2 a:hover{
+            color: #013264;
+        }
+        .product-info p{
+            letter-spacing: 0.5px;
+            line-height: 1.7;
+            margin: 0;
+        }
