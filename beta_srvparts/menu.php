@@ -2,17 +2,17 @@
 
 $home_menu = "<a href='index.html' title='Home'>HOME</a>";
 
-$products_menu = "<a href='products' title='Products'>PRODUCTS</a>";
+$products_menu = "<a href='products.php' title='Products'>PRODUCTS</a>";
 
 // $dealers_menu = "<a href='/dealers' title='Dealers'>DEALERS</a>";
 
 // $testimonials_menu = "<a href='http://sourceRV.com/testimonials' title='Testimonials'>TESTIMONIALS</a>";
 
-$videos_menu = "<a href='videos' title='Videos'>VIDEOS</a>";
+$videos_menu = "<a href='videos.php' title='Videos'>VIDEOS</a>";
 
-$resources_menu = "<a href='resources' title='Resources'>RESOURCES</a>";
+$resources_menu = "<a href='resources.php' title='Resources'>RESOURCES</a>";
 
-$about_menu = "<a href='about' title='About Us'>ABOUT US</a>";
+$about_menu = "<a href='about.php' title='About Us'>ABOUT US</a>";
 
 
 
